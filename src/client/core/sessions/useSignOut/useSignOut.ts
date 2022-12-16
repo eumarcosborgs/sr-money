@@ -23,6 +23,15 @@ export function useSignOut() {
 
       await queryClient.invalidateQueries()
     },
+    onError: async () => {
+      delete api.defaults.headers.common.authorization
+
+      clearToken()
+      clearStorage()
+      navigate(SIGN_IN)
+
+      await queryClient.invalidateQueries()
+    },
   })
 
   return {
