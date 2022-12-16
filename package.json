@@ -1,7 +1,8 @@
 {
-  "name": "ignite-dt-money",
-  "version": "0.0.0",
+  "name": "sr-money",
+  "version": "0.0.1",
   "type": "module",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -24,6 +25,7 @@
     "react-datepicker": "^4.8.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.39.5",
+    "react-is": "16.8.0",
     "react-query": "^3.39.2",
     "react-router": "^6.4.3",
     "react-router-dom": "^6.4.3",
