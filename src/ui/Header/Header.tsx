@@ -11,6 +11,7 @@ import {
   SignOutButton,
 } from './styles'
 import { ArrowCircleLeft } from 'phosphor-react'
+import { Tooltip } from 'ui/Tooltip'
 
 export function Header() {
   const { categoryIdSelected, categories, onChangeCategory } = useCategory()
@@ -46,9 +47,11 @@ export function Header() {
 
           <NewTransactionModal />
 
-          <SignOutButton onClick={handleSignOut}>
-            <ArrowCircleLeft className="signOut" size={32} />
-          </SignOutButton>
+          <Tooltip message="Sair da aplicação" position="bottom">
+            <SignOutButton onClick={handleSignOut}>
+              <ArrowCircleLeft className="signOut" size={32} />
+            </SignOutButton>
+          </Tooltip>
         </div>
       </HeaderContent>
     </HeaderContainer>
