@@ -28,7 +28,7 @@ export function SignIn() {
             placeholder="Secret password"
             {...register('password')}
             maxLength={12}
-            minLength={6}
+            minLength={4}
             error={errors?.password?.message}
           />
 
